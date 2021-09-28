@@ -22,12 +22,12 @@ section {
       font-size: 1.3rem;
       padding: 0.25rem 2rem;
       margin: 1rem 0;
-      @include border(3px, $dark-cl, solid, all);
       border-radius: 3rem;
       -webkit-border-radius: 3rem;
       -moz-border-radius: 3rem;
       -ms-border-radius: 3rem;
       -o-border-radius: 3rem;
+      @include border(3px, $dark-cl, solid, all);
     }
 
     .know-more {
@@ -36,15 +36,59 @@ section {
     }
   }
 
+  // growth booster
+  &.growth-booster {
+    margin-bottom: 0;
+  }
+
   &.methods {
     display: grid;
     // grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); // temporary because it is suposed to be displayed in 2 columns in desktop
     grid-gap: 1rem;
     padding-bottom: 2rem;
+    margin-bottom: 0;
   }
 
-  // growth booster
-  &.growth-booster {
-    margin-bottom: 0;
+  // growth percentage
+  .percent {
+    margin-top: 4rem;
+    font-size: 7rem;
+    font-weight: 700;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease;
+    -webkit-transition: transform 0.5s ease;
+    -moz-transition: transform 0.5s ease;
+    -ms-transition: transform 0.5s ease;
+    -o-transition: transform 0.5s ease;
+
+    &.scaleup {
+      transform: scale(130%);
+      -webkit-transform: scale(130%);
+      -moz-transform: scale(130%);
+      -ms-transform: scale(130%);
+      -o-transform: scale(130%);
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+    .percent-num {
+      font-size: 7rem;
+      grid-row: -1/1;
+    }
+    .percent-mark {
+      font-size: 70%;
+      justify-self: start;
+    }
+    .month {
+      color: gray;
+      font-size: 2rem;
+      line-height: 1;
+      align-self: start;
+    }
   }
 }

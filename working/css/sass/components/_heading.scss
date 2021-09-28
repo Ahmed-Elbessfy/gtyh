@@ -1,0 +1,28 @@
+section {
+  .heading {
+    span {
+      font-family: "avantgarde bk bt";
+    }
+  }
+
+  // methods section
+  h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .our {
+    h6 {
+      position: relative;
+      background-color: #27b24b;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border-radius: 2rem;
+      -webkit-border-radius: 2rem;
+      -moz-border-radius: 2rem;
+      -ms-border-radius: 2rem;
+      -o-border-radius: 2rem;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.program-btn {
+  height: 8rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  @include border(7px, #a2a2a2, solid, all);
+
+  img {
+    height: 4rem;
+  }
+}

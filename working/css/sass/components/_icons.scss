@@ -1,0 +1,59 @@
+i {
+  font-size: 1.5rem;
+}
+
+.fas.fa-angle-double-down {
+  margin-right: 0.5rem;
+}
+
+.fas.fa-question {
+  font-size: 2.5rem;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+
+// methods section
+i.fas.fa-times,
+i.fas.fa-check {
+  font-size: 2.5rem;
+  width: 4rem;
+  height: 4rem;
+  padding: 0.8rem;
+  margin: 0 0.7rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+i.fas.fa-times {
+  background-color: red;
+  color: $gray-cl;
+}
+i.fas.fa-check {
+  background-color: #27b24b;
+  color: $gray-cl;
+}
+
+// list icons
+.ordinary i.fas.fa-times,
+.our i.fas.fa-check {
+  position: absolute;
+  font-size: 1.5rem;
+  height: 2rem;
+  width: 2rem;
+  padding: 0.25rem;
+  margin: 0;
+  right: -1rem;
+  top: calc(50% - 1rem);
+}
+
+.our i.fas.fa-check {
+  color: #27b24b;
+  background: $gray-cl;
+  right: unset;
+  left: -1rem;
+}

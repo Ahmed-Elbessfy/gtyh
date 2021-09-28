@@ -2,6 +2,11 @@ section {
   margin-bottom: 2rem;
   padding-top: 2rem;
 
+  p {
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+
   // marketing video
   &.show-video {
     padding: 2rem 0;
@@ -31,7 +36,14 @@ section {
     }
   }
 
-  // growth poster
+  &.methods {
+    display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); // temporary because it is suposed to be displayed in 2 columns in desktop
+    grid-gap: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  // growth booster
   &.growth-booster {
     margin-bottom: 0;
   }

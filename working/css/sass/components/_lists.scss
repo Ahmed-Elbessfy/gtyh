@@ -1,9 +1,6 @@
 ul {
   width: 100%;
   padding: 0 0.75rem 0 0.35rem;
-  &.our-list {
-    padding: 0 0.35rem 0 0.75rem;
-  }
   li {
     text-align: right;
     margin-bottom: 1rem;
@@ -23,6 +20,37 @@ ul {
         width: 110%;
         margin-right: -5%;
       }
+    }
+  }
+
+  // methods section
+  &.our-list {
+    padding: 0 0.35rem 0 0.75rem;
+  }
+
+  .ordinary,
+  .our {
+    margin: 1rem auto;
+    padding: 0 1.5rem;
+    text-align: center;
+    font-size: 1.3rem;
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+    position: relative;
+    max-width: 40rem;
+  }
+  .our {
+    .sec-txt {
+      font-size: 80%;
+      width: 90%;
+      margin: auto;
+      min-width: 14rem;
+    }
+    &:last-child {
+      letter-spacing: 2px;
     }
   }
 }

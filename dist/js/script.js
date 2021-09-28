@@ -1,0 +1,1 @@
+"use strict";var main=document.querySelector("main"),header=document.querySelector("header");document.addEventListener("DOMContentLoaded",function(){main.style="margin-top:".concat(header.offsetHeight,"px")});

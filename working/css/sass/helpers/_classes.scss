@@ -1,0 +1,36 @@
+//helper class
+
+.green-cl {
+  color: $green-cl !important;
+}
+
+.green-border {
+  border-color: $green-cl !important;
+}
+
+.green-bg {
+  background-color: $green-cl !important;
+  color: $gray-cl !important;
+}
+
+.gray-cl {
+  color: $gray-cl !important;
+}
+
+.dark-cl {
+  color: $dark-cl !important;
+}
+
+.gray-border {
+  border-color: $gray-cl !important;
+}
+
+.gray-bg {
+  background-color: $gray-cl !important;
+  color: $green-cl !important;
+}
+
+.rtl {
+  direction: rtl;
+}
+//placeholders

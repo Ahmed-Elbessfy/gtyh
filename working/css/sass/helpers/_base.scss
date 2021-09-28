@@ -10,8 +10,9 @@ html,
 body {
   font-size: $basic-fz;
   font-family: $main-ff, "helvetica", "times new roman", serif;
-  color: $green-cl !important;
+  color: $blue-cl !important;
   text-align: center;
+  background-color: $gray-cl;
 }
 
 //setting font-size for all elements

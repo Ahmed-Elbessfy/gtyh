@@ -1,0 +1,28 @@
+ul {
+  width: 100%;
+  padding: 0 0.75rem 0 0.35rem;
+  &.our-list {
+    padding: 0 0.35rem 0 0.75rem;
+  }
+  li {
+    text-align: right;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-weight: 600;
+  }
+  &.attract {
+    li {
+      background-color: #dff2f1;
+      width: 120%;
+      margin-right: -10%;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+      @media (max-width: $xs_width) {
+        width: 110%;
+        margin-right: -5%;
+      }
+    }
+  }
+}

@@ -8,7 +8,13 @@ const gulp = require("gulp"),
   zip = require("gulp-zip"),
   uglify = require("gulp-uglify"),
   // imagemin = require("gulp-imagemin"),
-  babel = require("gulp-babel");
+  babel = require("gulp-babel"),
+  deploy = require("gulp-gh-pages");
+
+// deploy task to github
+gulp.task("deploy", function () {
+  return gulp.src("./dist/**/*").pipe(deploy());
+});
 
 // Live server task : creates live server at: localhost:8000 and allow reload
 gulp.task("live", async () => {

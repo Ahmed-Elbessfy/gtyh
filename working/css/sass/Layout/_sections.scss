@@ -53,7 +53,7 @@ section {
     margin-bottom: 0;
   }
 
-  // growth percentage
+  // growth percentage section
   .percent {
     margin-top: 4rem;
     font-size: 7rem;
@@ -96,12 +96,31 @@ section {
     }
   }
 
-  // strategy
+  // strategy section
   &.strategy {
     p {
       font-weight: normal;
       font-size: 1.5rem;
       margin-bottom: 2rem;
+      width: 110%;
+      padding: 1rem 0;
+    }
+
+    .fade-bg {
+      background: #203f41;
+    }
+    .underline {
+      border-bottom: 1px solid $gray-cl;
+      padding-bottom: 0.2rem;
+    }
+  }
+
+  // program steps section
+  .step {
+    display: grid;
+    grid-template-columns: 8rem 1fr;
+
+    p {
     }
   }
 }

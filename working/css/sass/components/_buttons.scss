@@ -1,2 +1,8 @@
-
-
+.program-step {
+  button {
+    height: 8rem;
+    border-radius: 50%;
+    @include border(7px, solid, #9c9c9c, all);
+    align-self: end;
+  }
+}

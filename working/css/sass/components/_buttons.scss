@@ -1,8 +1,14 @@
 .program-step {
   button {
-    height: 8rem;
+    height: 9rem;
     border-radius: 50%;
-    @include border(7px, solid, #9c9c9c, all);
+    @include border(7px, solid, #c6c8ce, all);
     align-self: end;
+    padding: 6px;
+
+    .btn-txt {
+      width: 100%;
+      padding: 0;
+    }
   }
 }

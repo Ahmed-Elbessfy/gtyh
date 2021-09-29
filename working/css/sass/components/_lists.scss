@@ -56,21 +56,60 @@ ul {
 
   // convert program
   &.program-steps {
-    padding: 0;
+    padding: 2rem 0;
+    position: relative;
+
+    .arrow {
+      position: absolute;
+      width: 0.8rem;
+      height: 100%;
+      background: gray;
+      right: 4rem;
+
+      &::after {
+        content: "";
+        width: 6rem;
+        height: 0.7rem;
+        background: gray;
+        position: absolute;
+        top: 0;
+        right: -2.5rem;
+      }
+      &::before {
+        content: "\f0d7";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 500;
+        width: 6rem;
+        // height: 0.7rem;
+        color: gray;
+        position: absolute;
+        bottom: 0;
+        right: -2.5rem;
+      }
+    }
 
     .program-step {
       display: grid;
-      grid-template-columns: 8rem 1fr;
+      grid-template-columns: 9rem 1fr;
       grid-gap: 1rem;
       padding: 0;
       margin: 0;
-      height: 10rem;
+      height: 12rem;
+      position: relative;
+
+      &:last-child {
+        button {
+          background: #4acd78 !important;
+          border-color: #27b24b;
+          color: $gray-cl !important;
+        }
+      }
 
       img {
         height: 4rem;
       }
 
-      p {
+      & > p {
         width: 100%;
         display: flex;
         align-items: center;
@@ -82,6 +121,10 @@ ul {
         -o-border-radius: 2rem;
         padding: 0;
         position: relative;
+
+        &.program-txt {
+          padding: 0 0.8rem;
+        }
 
         &.program-txt::after {
           content: "";

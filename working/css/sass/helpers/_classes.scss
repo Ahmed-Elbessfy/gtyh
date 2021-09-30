@@ -56,4 +56,9 @@
 .rtl {
   direction: rtl;
 }
+
+.underline {
+  border-bottom: 2px solid $gray-cl;
+  padding-bottom: 2px;
+}
 //placeholders

@@ -127,15 +127,6 @@ section {
     }
   }
 
-  // program steps section
-  .step {
-    display: grid;
-    grid-template-columns: 8rem 1fr;
-
-    p {
-    }
-  }
-
   // converting program section
   &.program {
     p {
@@ -150,6 +141,10 @@ section {
     .underline {
       border-bottom: 2px solid $gray-cl;
       padding-bottom: 2px;
+    }
+
+    .mobile-design-program {
+      padding-bottom: 5rem;
     }
   }
 }

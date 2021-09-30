@@ -1,14 +1,15 @@
 // Variables
 const main = document.querySelector("main"),
   header = document.querySelector("header"),
-  percent = document.querySelector(".percent");
-
+  percent = document.querySelector(".percent"),
+  programSteps = document.querySelector(".program-steps");
 // to prevent repeating percent count animation
-let counterDone = false;
+let counterDone = false,
+  toggleTxtProgramTimeOut;
 
 // Functions
-//percent animation
 
+//percent animation
 function animateValue(obj, start, end, duration) {
   let startTimestamp = null;
   const step = (timestamp) => {
@@ -28,6 +29,29 @@ function animateValue(obj, start, end, duration) {
   };
   window.requestAnimationFrame(step);
 }
+
+// toggle show program txt
+const toggleShow = (e) => {
+  // clear timeout for hiding txt
+  clearTimeout(toggleTxtProgramTimeOut);
+  // data-show value of clicked element
+  const showN = e.target.dataset.show;
+  // if clicked item has data-show
+  if (showN) {
+    // element with data-show attribute to check if it is exist for the first time click
+    const shown = document.querySelector(".show");
+    // if there is a button clicked, hide its new to show the new one
+    if (shown) shown.classList.remove("show");
+    // show corresponding text
+    document
+      .querySelector(`.show-target-${parseInt(showN)}`)
+      .classList.add("show");
+    // hide txt after 3 seconds
+    toggleTxtProgramTimeOut = setTimeout(() => {
+      document.querySelector(".show").classList.remove("show");
+    }, 3000);
+  }
+};
 
 // Events
 
@@ -58,3 +82,5 @@ document.addEventListener("scroll", () => {
     }, 3000);
   }
 });
+
+programSteps.addEventListener("click", toggleShow);

@@ -7,3 +7,30 @@ hr {
   margin: auto;
   border: 1px solid #bababa;
 }
+
+.mobile-design-program {
+  .arrow {
+    position: absolute;
+    width: 0.8rem;
+    height: 100%;
+    background: gray;
+    right: 4rem;
+
+    &::after {
+      content: "";
+      width: 6rem;
+      height: 0.7rem;
+      background: gray;
+      position: absolute;
+      top: 0;
+      right: -2.5rem;
+    }
+    & i {
+      font-size: 6rem;
+      color: #808080;
+      position: absolute;
+      bottom: -35px;
+      right: -22px;
+    }
+  }
+}

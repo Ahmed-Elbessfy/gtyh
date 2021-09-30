@@ -125,14 +125,6 @@ section {
       width: 110%;
       padding: 1rem 0;
     }
-
-    .fade-bg {
-      background: #203f41;
-    }
-    .underline {
-      border-bottom: 1px solid $gray-cl;
-      padding-bottom: 0.2rem;
-    }
   }
 
   // program steps section
@@ -152,7 +144,8 @@ section {
     }
 
     .fade {
-      background: #244346;
+      // background: #244346;
+      background: #203f41;
     }
     .underline {
       border-bottom: 2px solid $gray-cl;

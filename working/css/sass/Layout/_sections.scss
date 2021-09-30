@@ -147,4 +147,12 @@ section {
       padding-bottom: 5rem;
     }
   }
+
+  // moneyback section
+  &.moneyback {
+    padding: 3rem 0;
+    p {
+      font-size: 1.3rem;
+    }
+  }
 }

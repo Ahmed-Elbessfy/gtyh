@@ -40,6 +40,7 @@ ul {
     position: relative;
     max-width: 40rem;
   }
+
   .our {
     .sec-txt {
       font-size: 80%;
@@ -113,6 +114,34 @@ ul {
           border-bottom: 10px solid transparent;
           transform: rotate(30deg);
         }
+      }
+    }
+  }
+
+  // Questions list
+  &.questions-list {
+    margin-top: 2rem;
+
+    li {
+      background-color: #dff2f1;
+      text-align: center;
+
+      p {
+        margin-bottom: 0;
+      }
+
+      &:last-child {
+        padding-bottom: 3rem;
+      }
+
+      .black {
+        color: #000;
+        font-weight: 800;
+        font-size: 130%;
+      }
+      @media (max-width: $xs_width) {
+        width: 110%;
+        margin-right: -2.5%;
       }
     }
   }
